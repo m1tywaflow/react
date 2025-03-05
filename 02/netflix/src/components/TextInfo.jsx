@@ -3,24 +3,24 @@ import React from "react";
 const TextInfo = () => {
   return (
     <>
-      <div class="title">
+      <div className="title">
         <h1>Stranger Things</h1>
       </div>
-      <div class="text-info">
-        <div class="datefilm">
+      <div className="text-info">
+        <div className="datefilm">
           <p>2019</p>
         </div>
-        <div class="director">
+        <div className="director">
           <span>DIRECTOR :</span>
-          <span class="author">Shawn Levy</span>
+          <span className="author">Shawn Levy</span>
         </div>
 
-        <div class="season">
+        <div className="season">
           <span>seasons:</span>
-          <span class="episode">3 (5 Episodes)</span>
+          <span className="episode">3 (5 Episodes)</span>
         </div>
       </div>
-      <div class="about">
+      <div className="about">
         <p>
           In 1980s Indiana, a group of young friends witness supernatural forces
           and secret government exploits. As they search for answers, the

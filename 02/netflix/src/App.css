@@ -1,42 +1,308 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px 110px;
+  overflow-y: hidden;
+}
+
+.netflix {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.line img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.date img {
+  height: 30px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  left: 50px;
+}
+
+.search-butt {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.search-butt img {
+  width: 36px;
+}
+
+.ava img {
+  width: 74px;
+  border-radius: 50%;
+}
+.genres {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 24px;
+  position: relative;
+  padding-left: 40px;
+  gap: 10px;
+  text-decoration: none;
+}
+.genres img {
+  top: 5px;
+  position: relative;
+}
+.genres a {
+  text-decoration: none;
+  color: #fff;
+}
+.title {
+  padding-left: 40px;
+}
+.title h1 {
+  font-weight: 700;
+  font-size: 47px;
+  letter-spacing: 5.5%;
+  color: #fff;
+}
+.text-info {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  font-size: 30px;
+}
+.datefilm {
+  color: #fff;
+}
+.director {
+  color: #fff;
+}
+.author {
+  padding-left: 8px;
+  color: #585757;
+  font-weight: 400;
+  font-size: 26px;
+}
+.season {
+  color: #fff;
+}
+.episode {
+  color: #585757;
+  padding-left: 6px;
+  font-size: 26px;
+}
+.about {
+  padding-left: 40px;
+  width: 44%;
+  color: #585757;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.star-rating {
+  display: inline-flex;
+  direction: rtl;
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 3rem;
+  color: gray;
+  line-height: 40px;
+  /* колір неактивних */
+
+  cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+  color: #ffca08; /* колір активної зірки */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffca08; /* колір при наведенні */
+}
+.play {
+  display: flex;
+  cursor: pointer;
+  gap: 90px;
+  margin-bottom: 38px;
+  padding-left: 40px;
+}
+.playnow p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30;
+  text-align: left;
+  margin-left: 34px;
+  margin-top: 14px;
+}
+.playnow {
+  width: 272px;
+  height: 64px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  border-radius: 10px;
+  background: rgb(213, 13, 31);
+  cursor: pointer;
+  border: none;
+  gap: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.episodes {
+  width: 270px;
+  height: 64px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.episodes p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 14px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.type2 {
+  padding-top: 0;
+  position: relative;
+  width: 100%;
+  max-width: 944px;
+  padding-bottom: 50px;
+}
+.infowork {
+  padding-left: 40px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 31.79px;
+  letter-spacing: 0.135em;
+  color: #ffffff;
+}
+.films {
+  gap: 50px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 50%;
+  padding-left: 40px;
+}
+.films-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 160%;
+}
+.films-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  object-position: center;
+}
+.strelku {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+.leftarrow {
+  color: rgb(154, 154, 154);
+  background-color: transparent;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  border: 1.42px solid rgba(167, 166, 166, 1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftarrow:hover {
+  background-color: white;
+}
+.rightarrow {
+  border: 1.54px solid rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightarrow:hover {
+  background-color: red;
+}
+.leftarrow img {
+  position: relative;
+  width: 10px;
+  margin-left: -1px;
+}
+.rightarrow img {
+  position: relative;
+  width: 10px;
+  margin-left: 2px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 66px;
+  background-color: rgba(255, 255, 255, 0.49);
+  position: fixed;
+  right: 0;
+  bottom: 102px;
+  padding-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.block::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background-color: red;
+  left: 0;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.age {
+  font-weight: 500;
+  line-height: 34px;
+  color: #fff;
+  font-size: 24px;
 }

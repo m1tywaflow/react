@@ -1,15 +1,15 @@
 import React from 'react';
-
+import line from "../assets/vector.png";
 const Genres = () => {
     return (
-        <div class="genres">
+        <div className="genres">
           <a href="#">Drama</a>
-          <div class="lines">
-            <img src="img/netflixpage/line.png" alt="line" />
+          <div className="lines">
+            <img src={line} alt="line" />
           </div>
           <a href="#">Thriller</a>
-          <div class="lines">
-            <img src="img/netflixpage/line.png" alt="line" />
+          <div className="lines">
+            <img src={line} alt="line" />
           </div>
           <a href="#">Supernatural</a>
         </div>

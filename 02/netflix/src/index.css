@@ -53,6 +53,11 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.container {
+  max-width: 1700px !important; /* Змініть це значення на бажане */
+  margin: 0 auto; /* Центрування контейнера */
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

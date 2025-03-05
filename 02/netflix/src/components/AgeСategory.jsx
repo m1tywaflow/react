@@ -2,8 +2,8 @@ import React from "react";
 
 const AgeСategory = () => {
   return (
-    <div class="block">
-      <span class="age">16+</span>
+    <div className="block">
+      <span className="age">16+</span>
     </div>
   );
 };

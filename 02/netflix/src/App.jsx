@@ -4,10 +4,17 @@ import TextInfo from "./components/TextInfo";
 import StarRating from "./components/StarRating";
 import Buttons from "./components/Buttons";
 import Posters from "./components/Posters";
+import Background from "./components/Background";
+import "bootstrap/dist/css/bootstrap.min.css";
 import AgeСategory from "./components/AgeСategory";
+import "../src/App.css";
+
+
+
 function App() {
   return (
     <>
+    <Background></Background>
       <Header></Header>
       <Genres></Genres>
       <TextInfo></TextInfo>
@@ -15,6 +22,7 @@ function App() {
       <Buttons></Buttons>
       <Posters></Posters>
       <AgeСategory></AgeСategory>
+      <Background></Background>
     </>
   );
 }

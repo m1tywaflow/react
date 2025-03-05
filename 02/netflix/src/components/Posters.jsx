@@ -1,34 +1,40 @@
 import React from "react";
-
+import first from "../assets/first.svg";
+import second from "../assets/second.svg";
+import third from "../assets/third.svg";
+import four from "../assets/four.svg";
+import five from "../assets/five.svg";
+import leftArrow from "../assets/left.png";
+import rightArrow from "../assets/right.png";
 const Posters = () => {
   return (
     <>
-      <div class="infowork">
-        <h2 class="info-title">POPULAR THIS WEEK</h2>
-        <div class="strelku">
-          <button class="leftarrow">
-            <img src="img/netflixpage/leftvector.svg" alt="" />
+      <div className="infowork">
+        <h2 className="info-title">POPULAR THIS WEEK</h2>
+        <div className="strelku">
+          <button className="leftarrow">
+            <img src={leftArrow} alt="larrow" />
           </button>
-          <button class="rightarrow">
-            <img src="img/netflixpage/rightvector.svg" alt="" />
+          <button className="rightarrow">
+            <img src={rightArrow} alt="rarrow" />
           </button>
         </div>
       </div>
-      <div class="films">
-        <div class="films-img">
-          <img src="img/netflixpage/breakingbad.png" alt="firsfilm" />
+      <div className="films">
+        <div className="films-img">
+          <img src={first} alt="firsfilm" />
         </div>
-        <div class="films-img">
-          <img src="img/netflixpage/therain.png" alt="secondfilm" />
+        <div className="films-img">
+          <img src={second} alt="secondfilm" />
         </div>
-        <div class="films-img">
-          <img src="img/netflixpage/lifenayear.png" alt="thirdfilm" />
+        <div className="films-img">
+          <img src={third} alt="thirdfilm" />
         </div>
-        <div class="films-img">
-          <img src="img/netflixpage/moneyheist.png" alt="fourthfilm" />
+        <div className="films-img">
+          <img src={four} alt="fourthfilm" />
         </div>
-        <div class="films-img">
-          <img src="img/netflixpage/squidgame.png" alt="fifthfilm" />
+        <div className="films-img">
+          <img src={five} alt="fifthfilm" />
         </div>
       </div>
     </>
