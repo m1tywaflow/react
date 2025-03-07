@@ -306,3 +306,10 @@
   color: #fff;
   font-size: 24px;
 }
+.login-butt{
+  background-color: crimson;
+}
+.logout-butt{
+  background-color: crimson;
+  margin-top: 10px;
+}
