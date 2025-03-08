@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
 .container1 {
   display: flex;
   justify-content: space-between;
@@ -13,6 +16,12 @@
 
 .logo img {
   width: 120px;
+}
+.date{
+font-size: 25px;
+padding-left: 50px;
+color: #fff;
+font-family: "Playwrite IT Moderna", cursive;
 }
 
 .line img {
@@ -52,16 +61,38 @@
   font-size: 24px;
   position: relative;
   padding-left: 40px;
-  gap: 10px;
   text-decoration: none;
 }
 .genres img {
-  top: 5px;
+  top: 52px;
   position: relative;
 }
 .genres a {
-  text-decoration: none;
   color: #fff;
+  top: 45px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.genre-item a:hover {
+  text-decoration: underline;
+}
+.genre-item {
+  gap: 6px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  width: 96px;
+}
+.genre-info{
+  padding-left: 22px;
+  margin-left: 42px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: white;
+  max-width: 400px;
 }
 .title {
   padding-left: 40px;
@@ -290,7 +321,6 @@
   bottom: 102px;
   padding-left: 30px;
 }
-
 .block::before {
   content: "";
   position: absolute;
@@ -299,17 +329,63 @@
   background-color: red;
   left: 0;
 }
-
 .age {
   font-weight: 500;
   line-height: 34px;
   color: #fff;
   font-size: 24px;
 }
-.login-butt{
+.login-butt {
   background-color: crimson;
+  border: none;
 }
-.logout-butt{
+.logout-butt {
   background-color: crimson;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 40px;
+  border: none;
+}
+.user-section {
+  display: flex;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  position: relative;
+  background: #000;
+  width: 80vw; /* Адаптивна ширина */
+  max-width: 900px; /* Максимальна ширина */
+  aspect-ratio: 16 / 9; /* Відношення сторін для YouTube */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  top: -5px;
+  right: -30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
 }
